@@ -172,6 +172,16 @@ p.nomes {
 }
 
 /*sobre-nos*/
+div.membro-card {
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+div.membro-card > h3 {
+    text-align: center;
+    color: var(--cor5);
+}
+
 div.membro-card > p{
     background-color: var(--cor1);
     border-radius: 9px;
