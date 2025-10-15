@@ -1,6 +1,19 @@
 @charset "UTF-8";
 
-@import url();
+@font-face {
+    font-family: 'creato';
+    src: url(fontes/creato_display/CreatoDisplay-Regular.otf) format(OpenType);
+}
+
+@font-face {
+    font-family: 'le jour serif';
+    src: url(fontes/le_jour_serif/Le\ Jour\ Serif\ Personal\ Use\ Only.otf) format(OpenType);
+}
+
+@font-face {
+    font-family: 'paris';
+    src: url(fontes/paris_forbel/Paris\ Forbel\ TTF.ttf) format(TrueType);
+}
 
 :root{
     --cor1: #00747c;
@@ -9,9 +22,9 @@
     --cor4: #878787;
     --cor5: #202022;
 
-    --fonte-padrao: Arial, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', sans-serif;
+    --fonte-padrao: 'creato', Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'le jour serif', cursive;
+    --fonte-destaque-2: 'paris', sans-serif;
 }
 
 * {
@@ -19,7 +32,7 @@
     padding: 0px;
 }
 
-body#index {
+body {
     background-color: var(--cor1);
 }
 
@@ -33,46 +46,63 @@ nav {
     margin-right: 10px;
 }
 
-a {
+nav > a {
     text-decoration: none;
     font-size: large;
     margin: 5px;
     color: var(--cor5);
+    font-family: var(--fonte-padrao);
 }
 
-#titulo-logo {
+nav > a:hover {
+    border-bottom: 2px solid var(--cor5);
+    border-radius: 10%;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+
+nav > h1 > a {
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+.titulo-logo {
     text-align: left;
     font-size: large;
-    margin-top: -20px;
+    margin-bottom: -27px;
     margin-left: 10px;
     color: var(--cor5);
+    font-family: var(--fonte-destaque);
 }
 
 hr {
     color: var(--cor5);
     width: 97%;
     margin: auto;
+    margin-top: 10px;
 }
 
-main {
+main#hero {
     min-width: 200px;
     max-width: 1000px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 159px;
+    margin-bottom: 88px;
 }
 
-main > div {
+main > div , main > section > div{
     display: inline-block;
 }
 
+/*inicio*/
 div.apresentacao {
     padding: 10px;
 }
 
 div.apresentacao > h1 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 40px;
+    font-family: var(--fonte-destaque-2);
 }
 
 div.apresentacao > p {
@@ -85,6 +115,28 @@ div.apresentacao > p {
     text-indent: 10px;
     font-size: larger;
     color: var(--cor5);
+    font-family: var(--fonte-padrao);
+    border-left:1px solid var(--cor5);
+    border-right:1px solid var(--cor5);
+}
+
+/*qualificacoes*/
+main.hero {
+    min-width: 200px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 88px;
+}
+
+div.apresentacao > h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: var(--fonte-destaque);
+}
+
+section.qualificacoes > div {
+    border: 1px solid black;
 }
 
 footer {
