@@ -52,16 +52,17 @@ nav > a {
     margin: 5px;
     color: var(--cor5);
     font-family: var(--fonte-padrao);
+    transition-duration: 0.6s;
 }
 
 nav > a:hover {
     border-bottom: 2px solid var(--cor5);
     border-radius: 10%;
-    transition-duration: 0.5s;
+    transition-duration: 0.6s;
     font-weight: bold;
 }
 
-nav > h1 > a {
+nav > h1 > a , div.avatar-container > a{
     text-decoration: none;
     color: var(--cor5);
 }
@@ -87,11 +88,16 @@ main#hero {
     max-width: 1000px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 88px;
+    margin-bottom: 79px;
 }
 
 main > div , main > section > div{
     display: inline-block;
+}
+
+p {
+    font-family: var(--fonte-padrao);
+    margin: 2px;
 }
 
 /*inicio*/
@@ -126,7 +132,7 @@ main.hero {
     max-width: 1000px;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 88px;
+    margin-bottom: 150px;
 }
 
 div.apresentacao > h2 {
@@ -135,8 +141,31 @@ div.apresentacao > h2 {
     font-family: var(--fonte-destaque);
 }
 
+section.qualificacoes {
+    text-align: center;
+}
+
 section.qualificacoes > div {
-    border: 1px solid black;
+    margin: 0 50px;
+    border-radius: 50%;
+}
+
+img.avatar-card {
+    height: 270px;
+    width: 200px;
+    margin: 0;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+img.avatar-card:hover {
+    height: 320px;
+    width: 250px;
+    transition-duration: 1s;
+}
+
+p.nomes {
+    margin: -30px;
 }
 
 footer {
