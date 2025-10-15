@@ -129,7 +129,7 @@ div.apresentacao > p {
 }
 
 /*qualificacoes*/
-main.hero {
+main#hero-q {
     min-width: 200px;
     max-width: 1000px;
     margin: auto;
@@ -137,7 +137,7 @@ main.hero {
     margin-bottom: 150px;
 }
 
-div.apresentacao > h2 , div.sobrenos > h2 {
+div.apresentacao > h2 , div.sobrenos > h2 , div.faleconnosco > h2 {
     margin-bottom: 20px;
     font-size: 30px;
     font-family: var(--fonte-destaque);
@@ -172,6 +172,14 @@ p.nomes {
 }
 
 /*sobre-nos*/
+main#hero-s {
+    min-width: 200px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
 div.membro-card {
     background-color: var(--cor2);
     border-radius: 10px;
@@ -182,7 +190,7 @@ div.membro-card > h3 {
     color: var(--cor5);
 }
 
-div.membro-card > p{
+div.membro-card > p {
     background-color: var(--cor1);
     border-radius: 9px;
     height: auto;
@@ -195,6 +203,43 @@ div.membro-card > p{
     font-family: var(--fonte-padrao);
     border-left:1px solid var(--cor5);
     border-right:1px solid var(--cor5);
+}
+
+/*contactos*/
+main#hero-c {
+    min-width: 200px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 262px;
+}
+
+div.contact-info {
+    display: block;
+    margin-top: 10px;
+}
+
+div.faleconnosco > p{
+    background-color: var(--cor1);
+    
+    text-align: justify;
+    font-size: larger;
+    color: var(--cor3);
+    font-family: var(--fonte-padrao);
+}
+
+div.contact-info {
+    border-radius: 9px;
+    border-left:1px solid var(--cor5);
+}
+
+div.contact-info > p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: larger;
+    color: var(--cor3);
+    font-family: var(--fonte-padrao);
 }
 
 /*rodape*/
