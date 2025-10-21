@@ -38,8 +38,8 @@ body {
 
 /*cabecalho*/
 header {
-    background-color: var(--cor1);
     padding: 10px 0;
+    background-color: var(--cor1);
 }
 
 nav {
@@ -85,6 +85,11 @@ hr {
     margin-top: 10px;
 }
 
+p , li , main.cvs > div > div > h2 {
+    font-family: var(--fonte-padrao);
+    margin: 2px;
+}
+/*inicio*/
 main#hero {
     min-width: 200px;
     max-width: 1000px;
@@ -97,12 +102,13 @@ main > div , main > section > div{
     display: inline-block;
 }
 
-p {
-    font-family: var(--fonte-padrao);
-    margin: 2px;
+/*inicio*/
+body#index {
+    background-image: url(imagens/email.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*inicio*/
 div.apresentacao {
     padding: 10px;
 }
@@ -114,7 +120,7 @@ div.apresentacao > h1 {
 }
 
 div.apresentacao > p {
-    background-color: var(--cor1);
+    display: inline-block;
     border-radius: 9px;
     height: auto;
     width: 350px;
@@ -128,13 +134,25 @@ div.apresentacao > p {
     border-right:1px solid var(--cor5);
 }
 
+div.apresentacao > img {
+    height: 250px;
+    width: 250px;
+    margin-left: 150px;
+}
+
 /*qualificacoes*/
+body#qualificacoes {
+    background-image: url(imagens/teste/inshot/3-pessoas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 main#hero-q {
     min-width: 200px;
     max-width: 1000px;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 150px;
+    margin-bottom: 111px;
 }
 
 div.apresentacao > h2 , div.sobrenos > h2 , div.faleconnosco > h2 {
@@ -154,35 +172,75 @@ section.qualificacoes > div {
 }
 
 img.avatar-card {
-    height: 270px;
+    height: 300px;
     width: 200px;
     margin: 0;
-    border-radius: 10px;
+    border-radius: 20px;
     transition-duration: 1s;
 }
 
 img.avatar-card:hover {
-    height: 320px;
-    width: 250px;
+    height: 350px;
+    width: 230px;
     transition-duration: 1s;
 }
 
 p.nomes {
     margin: -30px;
+    font-weight: bolder;
+}
+/*cvs*/
+main.cvs {
+    background-color: var(--cor3);
+    margin: 0 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+main.cvs > div > div.dados{
+    width: 590px;
+    vertical-align: top;
+}
+
+div.dados {
+    display: inline-block;
+}
+
+main.cvs > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-variant: small-caps;
+    font-family: var(--fonte-destaque-2);
+    background-color: var(--cor1);
+    border-radius: 20px;
+}
+
+main.cvs > div > div > h2 {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+main.cvs > div > div > ul, .li3 {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
 }
 
 /*sobre-nos*/
 main#hero-s {
-    min-width: 200px;
-    max-width: 1000px;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 150px;
+    margin: 10px 30px 120px 30px;
 }
 
 div.membro-card {
     background-color: var(--cor2);
     border-radius: 10px;
+    margin: 0 30px;
+    vertical-align: top;
 }
 
 div.membro-card > h3 {
@@ -190,12 +248,19 @@ div.membro-card > h3 {
     color: var(--cor5);
 }
 
+section.membros > img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
 div.membro-card > p {
     background-color: var(--cor1);
     border-radius: 9px;
     height: auto;
     width: 300px;
-    padding: 10px;
+    padding: 12px;
     text-align: justify;
     text-indent: 10px;
     font-size: larger;
@@ -206,6 +271,12 @@ div.membro-card > p {
 }
 
 /*contactos*/
+body#contactos {
+    background-image: url(imagens/fundos/email.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 main#hero-c {
     min-width: 200px;
     max-width: 1000px;
@@ -220,8 +291,6 @@ div.contact-info {
 }
 
 div.faleconnosco > p{
-    background-color: var(--cor1);
-    
     text-align: justify;
     font-size: larger;
     color: var(--cor3);
