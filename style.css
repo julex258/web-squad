@@ -104,7 +104,7 @@ main > div , main > section > div{
 
 /*inicio*/
 body#index {
-    background-image: url(imagens/email.png);
+    background-image: url(imagens/fundos/pc-inicial.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
