@@ -95,7 +95,7 @@ main#hero {
     max-width: 1000px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 79px;
+    margin-bottom: 74px;
 }
 
 main > div , main > section > div{
@@ -152,7 +152,7 @@ main#hero-q {
     max-width: 1000px;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 111px;
+    margin-bottom: 77px;
 }
 
 div.apresentacao > h2 , div.sobrenos > h2 , div.faleconnosco > h2 {
@@ -186,8 +186,10 @@ img.avatar-card:hover {
 }
 
 p.nomes {
-    margin: -30px;
     font-weight: bolder;
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 10px;
 }
 /*cvs*/
 main.cvs {
@@ -282,7 +284,7 @@ main#hero-c {
     max-width: 1000px;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 262px;
+    margin-bottom: 258px;
 }
 
 div.contact-info {
