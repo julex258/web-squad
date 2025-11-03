@@ -117,6 +117,7 @@ div.apresentacao > h1 {
     margin-bottom: 30px;
     font-size: 40px;
     font-family: var(--fonte-destaque-2);
+    color: var(--cor3);
 }
 
 div.apresentacao > p {
@@ -148,11 +149,8 @@ body#qualificacoes {
 }
 
 main#hero-q {
-    min-width: 200px;
-    max-width: 1000px;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 77px;
+    margin: 10px 30px 120px 30px;
 }
 
 div.apresentacao > h2 , div.sobrenos > h2 , div.faleconnosco > h2 {
@@ -162,26 +160,30 @@ div.apresentacao > h2 , div.sobrenos > h2 , div.faleconnosco > h2 {
     color: var(--cor3);
 }
 
+div.apresentacao, div.avatar-container {
+    display: block;
+}
+
 section.qualificacoes {
     text-align: center;
+    display: inline-block;
 }
 
 section.qualificacoes > div {
     margin: 0 50px;
-    border-radius: 50%;
 }
 
 img.avatar-card {
-    height: 300px;
-    width: 200px;
+    height: 150px;
+    width: 100px;
     margin: 0;
     border-radius: 20px;
     transition-duration: 1s;
 }
 
 img.avatar-card:hover {
-    height: 350px;
-    width: 230px;
+    height: 180px;
+    width: 130px;
     transition-duration: 1s;
 }
 
@@ -189,8 +191,17 @@ p.nomes {
     font-weight: bolder;
     background-color: var(--cor3);
     color: var(--cor5);
-    border-radius: 10px;
+    border-radius: 7px;
+    margin: -3px;
+    margin-bottom: 10px;
 }
+
+iframe {
+    width: 900px;
+    height: 550px;
+    vertical-align: top;
+}
+
 /*cvs*/
 main.cvs {
     background-color: var(--cor3);
@@ -217,6 +228,7 @@ main.cvs > h1 {
     font-family: var(--fonte-destaque-2);
     background-color: var(--cor1);
     border-radius: 20px;
+    color: var(--cor3);
 }
 
 main.cvs > div > div > h2 {
